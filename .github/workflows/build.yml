@@ -1,0 +1,10 @@
+name: Build Mod
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main", "master"]
+
+jobs:
+  build:
+    uses: geode-sdk/action/.github/workflows/build.yml@main
